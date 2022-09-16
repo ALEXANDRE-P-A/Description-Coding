@@ -5,96 +5,289 @@ body{
   color: #000000;
   background-color: #ffffff;
   max-width: 1024px;
+  min-width: 375px;
   margin: 0 auto;
   padding: 0;
   position: relative;
 }
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+}
+header {
+  width: 100%;
+  height: 109px;
+  position: relative;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+#header-text {
+  width: 220px;
+  height: 69px;
+  border: 1px solid #000000;
+  padding-top: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+}
+#about-text {
+  width: 104px;
+  height: 46px;
+  position: absolute;
+}
+#work-text {
+  width: 107px;
+  height: 46px;
+  position: absolute;
+}
+#main-visual {
+  height: 400px;
+  position: absolute;
+  top: 109px;
+  left: 0;
+}
+#profile-picture {
+  width: 141px;
+  height: 142px;
+  position: absolute;
+  background-size: contain;
+  border-radius: 50%;
+}
+#content {
+  height: 711px;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding-top: 50px;
+}
+#about {
+  position: absolute;
+  font-size: 34px;
+}
+#content > p {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+}
+#content > ul {
+  position: absolute;
+  font-size: 18px;
+}
+#works {
+  position: absolute;
+  font-size: 34px;
+}
+#work-one-img{
+  position: absolute;
+  background-image: url('../images/works1.png');
+  background-size: contain;
+}
+#work-one-description {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+#work-two-img{
+  position: absolute;
+  background-image: url('../images/works2.png');
+  background-size: contain;
+}
+#work-two-description {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+#work-three-img{
+  position: absolute;
+  background-image: url('../images/works3.png');
+  background-size: contain;
+}
+#work-three-description {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+footer {
+  margin: 0;
+  padding: 0;
+  width: 268px;
+  height: 25px;
+  position: absolute;
+}
 
 @media screen and (min-width: 768px){
-  header {
-    width: 100%;
-    height: 109px;
-    position: relative;
-    font-size: 34px;
-    font-weight: bold;
-    margin: 0 auto;
-  }
   #header-text {
-    width: 220px;
-    height: 69px;
-    border: 1px solid #000000;
-    padding-top: 8px;
-    box-sizing: border-box;
-    text-align: center;
-    position: absolute;
     top: 20px;
     left: 179px;
   }
   #about-text {
-    width: 104px;
-    height: 46px;
-    position: absolute;
     top: 31px;
     left: 531px;
   }
   #work-text {
-    width: 107px;
-    height: 46px;
-    position: absolute;
     top: 31px;
     left: 670px;
   }
   /* --------- メインビジュアルセクション --------- */
   #main-visual {
     width: 100%;
-    height: 400px;
-    position: absolute;
-    top: 109px;
-    left: 0;
     background-image: url('../images/main.png');
     background-size: contain;
   }
   #content {
     width: 100%;
-    height: 711px;
-    position: absolute;
     top: 509px;
-    left: 0;
-    margin: 0;
-    padding-top: 50px;
   }
-  #content > h2 {
-    position: absolute;
-    font-size: 34px;
+  #about {
     top: 40px;
     left: 428px;
   }
   #profile-picture {
-    width: 141px;
-    height: 142px;
-    position: absolute;
     top: 142px;
     left: 180px;
     background-image: url('../images/about.png');
-    background-size: contain;
-    border-radius: 50%;
   }
   #content > p {
-    position: absolute;
-    top: 118px;
+    top: 138px;
     left: 354px;
-    font-size: 24px;
-    font-weight: bold;
   }
   #content > ul {
-    position: absolute;
     left: 344px;
     top: 164px;
-    font-size: 18px;
   }
-
+  #works {
+    top: 308px;
+    left: 428px;
+  }
+  #work-one-img{
+    width: 179px;
+    height: 134px;
+    left: 193px;
+    top: 413px;
+  }
+  #work-one-description {
+    width: 178px;
+    height: 93px;
+    top: 574px;
+    left: 193px;
+  }
+  #work-two-img{
+    width: 179px;
+    height: 134px;
+    left: 390px;
+    top: 413px;
+  }
+  #work-two-description {
+    width: 178px;
+    height: 93px;
+    top: 574px;
+    left: 390px;
+  }
+  #work-three-img{
+    width: 179px;
+    height: 134px;
+    left: 587px;
+    top: 413px;
+  }
+  #work-three-description {
+    width: 178px;
+    height: 93px;
+    top: 574px;
+    left: 587px;
+  }
+  footer {
+    top: 1208px;
+    left: 345px;
+  }
 }
 
 @media screen and (max-width: 767px){
-
+  #header-text {
+    top: 20px;
+    left: 20px;
+  }
+  #about-text {
+    top: 31px;
+    left: 516px;
+  }
+  #work-text {
+    top: 31px;
+    left: 640px; 
+  }
+  #main-visual {
+    width: 767px;
+    background-image: url('../images/MainVisual.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #profile-picture {
+    top: 147px;
+    left: 60px;
+    background-image: url('../images/about.png');
+  }
+  #content {
+    width: 767px;
+    top: 509px;
+    left: 0;
+  }
+  #about {
+    top: 0;
+    left: 317px;
+  }
+  #content > p {
+    top: 138px;
+    left: 240px;
+  }
+  #content > ul {
+    left: 240px;
+    top: 147px;
+  }
+  #works {
+    top: 283px;
+    left: 315px;
+  }
+  #work-one-img{
+    width: 647px;
+    height: 580px;
+    left: 60px;
+    top: 380px;
+    background-repeat: no-repeat;
+  }
+  #work-one-description {
+    width: 727px;
+    height: 55px;
+    top: 880px;
+    left: 20px;
+  }
+  #work-two-img{
+    width: 647px;
+    height: 490px;
+    left: 60px;
+    top: 941px;
+  }
+  #work-two-description {
+    width: 647px;
+    height: 35px;
+    top: 1441px;
+    left: 60px;
+  }
+  #work-three-img{
+    width: 647px;
+    height: 492px;
+    left: 61px;
+    top: 1501px;
+  }
+  #work-three-description {
+    width: 647px;
+    height: 25px;
+    top: 2001px;
+    left: 60px;
+  }
+  footer {
+    top: 2600px;
+    left: 250px;
+  }
 }
